@@ -1,5 +1,12 @@
 def reverse_string(str)
-  # type your code in here
+  # split string
+  split_str = str.split("")
+  # create empty array
+  reversed = []
+  # iterate through string and shovel into array
+  str.size.times { reversed << split_str.pop }
+  # join reversed string and return
+  return reversed.join
 end
 
 if __FILE__ == $PROGRAM_NAME

@@ -1,5 +1,15 @@
 function fibonacci(num) {
-  // type your code here
+  // start with 0 and 1
+  if (num < 2) return num;
+
+  let a = 0, b = 1, total;
+  while (num >= 2){
+    total = a + b;
+    a = b;
+    b = total;
+    num--;
+  }
+  return total
 }
 
 if (require.main === module) {

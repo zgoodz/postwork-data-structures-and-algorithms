@@ -1,5 +1,13 @@
 function reverseString(str) {
-  // type your code here
+  //create empty str
+  let reversedStr = ""
+
+  //iterate backwards through the given string 
+  //then add to new string
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i]
+  }
+  return reversedStr
 }
 
 if (require.main === module) {
